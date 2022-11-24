@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/lp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imagview"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/custom_traicay"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/textviewten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imagview"
+        android:paddingLeft="20dp"
+        android:background="@drawable/custom_chu"
+        android:text="Ten"
+        android:textColor="#FF0059"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textviewmota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textviewten"
+        android:layout_toRightOf="@id/imagview"
+        android:background="@drawable/custom_mota"
+        android:text="mo ta"
+        android:paddingLeft="20dp"
+        android:textColor="#304FFE"
+        android:textSize="15dp" />
+
+    <ImageButton
+        android:id="@+id/xoa"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/lp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="35dp"
+        android:background="@null"
+        android:src="@drawable/ic_baseline_delete_24"
+        tools:ignore="NotSibling" />
+    <ImageButton
+        android:id="@+id/update"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/lp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="35dp"
+        android:background="@null"
+        android:src="@drawable/ic_baseline_auto_fix_normal_24"
+        tools:ignore="NotSibling" />
+
+    <View
+        android:layout_below="@+id/imagview"
+        android:background="#CFC3C3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</RelativeLayout>
